@@ -6,6 +6,8 @@ df_opsales = pd.read_csv('./data/dfsample/opsales.csv')
 
 df_markers = pd.read_csv('./data/dfsample/markers.csv')
 
+df_carteraCombinada = pd.read_csv('./data/dfsample/cartera_combinada.csv', index_col=0)
+
 # dataset de prueba para el mapa
 datatest ={'DEPARTAMENTO': ['SANTANDER', 'ANTIOQUIA', 'CUNDINAMARCA', 'BOYACA'], 
        'COUNT':[99, 900, 9000,900000], 
