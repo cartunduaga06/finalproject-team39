@@ -28,7 +28,7 @@ navbar = dbc.NavbarSimple([
     ),
     dbc.NavItem(dbc.NavLink("Nosotros", href="/nosotros")),
     ],
-    brand="DS4A Project - Team 300",
+    brand="DS4A Project - Team 29 || Fundación Amanecer",
     color="primary",
     dark=True,
     className="mb-2",
