@@ -5,7 +5,7 @@ import  pandas  as pd
 
 
 from components.table.table import *
-from components.sampledf.model import df_costos, df_opsales,  df_carteraCombinada
+from components.sampledf.model import df_carteraCombinada
 
 data3 =  pd.DataFrame()
 data3['Region'] = df_carteraCombinada['Region']
