@@ -1,10 +1,10 @@
 import pandas as pd
 
-df_costos = pd.read_csv('./data/dfsample/costos.csv')
+# df_costos = pd.read_csv('./data/dfsample/costos.csv')
 
-df_opsales = pd.read_csv('./data/dfsample/opsales.csv')
+# df_opsales = pd.read_csv('./data/dfsample/opsales.csv')
 
-df_markers = pd.read_csv('./data/dfsample/markers.csv')
+# df_markers = pd.read_csv('./data/dfsample/markers.csv')
 
 df_carteraCombinada = pd.read_csv('./data/dfsample/cartera_combinada.csv', index_col=0)
 
