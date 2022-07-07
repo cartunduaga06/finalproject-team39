@@ -39,7 +39,7 @@ class mapcol_municipios:
             locations=self.df.ID, 
             z=self.df['VALUE'],
             colorscale="dense",
-            text=self.df.MUNICIPIO,
+            text=self.df['Sucursal Real'],
             marker_opacity=0.9, 
             marker_line_width=0.5,
             colorbar_title = "COP",

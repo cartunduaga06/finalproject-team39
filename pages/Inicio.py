@@ -11,6 +11,8 @@ import pandas as pd
 import plotly.graph_objects as go
 from components.sampledf.model import df_carteraCombinada
 from components.maps.mapsample import mapsample
+from components.maps.mapcol_departamentos import mapcol_departamentos
+#from components.maps.mapcol_municipios_famanecer import mapcol_municipios_famanecer
 from pages.Tablas import tablacartera
 
 data = df_carteraCombinada
@@ -42,7 +44,9 @@ kpi3 = kpibadge('B     20835', 'Calificacion cierre', 'Approved')
 kpi4 = kpibadge('C     13755', 'Calificacion cierre', 'Approved')
 kpi5 = kpibadge('D     11164', 'Calificacion cierre', 'Approved')
 
-mapa_ejemplo = mapsample('Mapa de ejemplo', 'id_mapa_ejemplo')
+num_creditos_por_sucursal = data.groupby(['Sucursal Real'])['Nro Solicitud'].count().reset_index()
+mapa_ejemplo = mapsample('Mapa de ejemplo', 'id_mapa_ejemplo', num_creditos_por_sucursal)
+#mapa_ejemplo = mapcol_municipios_famanecer('Departamentos', 'id_mapa_departamentos', num_creditos_por_sucursal)
 
 params1 = {
             'title': 'Cartera', 

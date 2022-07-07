@@ -15,7 +15,7 @@ file2 = open('./data/mdsamples/story2.md')
 texto1  = markformat('Citizenship', file1.read())
 texto2  = markformat('Global Diversity', file2.read())
 
-mapa_ejemplo_story = mapsample('Mapa elecciones', 'id_mapa_story1')
+#mapa_ejemplo_story = mapsample('Mapa elecciones', 'id_mapa_story1')
 
 
 # specific layout for this page
@@ -36,7 +36,7 @@ layout = dbc.Container(
             ], lg=4), 
 
             dbc.Col([
-                 mapa_ejemplo_story.display()
+                 #mapa_ejemplo_story.display()
 
             ], lg=8), 
    
@@ -50,7 +50,7 @@ layout = dbc.Container(
             ], lg=4), 
 
             dbc.Col([
-                 mapa_ejemplo_story.display()
+                 #mapa_ejemplo_story.display()
 
             ], lg=8), 
    
